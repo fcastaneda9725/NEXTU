@@ -48,3 +48,11 @@ footer {
 	background-color: white;
 	width: 33.3%;
 }
+
+#disponible .contenedor > div {
+	text-align: center;
+	padding: 10px;
+	border: solid 5px coral;
+	background-color: white;
+	width: 25%;
+}
