@@ -10,8 +10,8 @@ Gelatina sin sabor         1 sobre
 Limones                    4 unidades
 
 Preparación:
-Primero debes adicionar las claras de huevo en un Bol y batir con los 150 gramos
-de Azucar Blanca; luego debes adicionar los 200 gramos de Leche Condensada y
+
+"Primero debes adicionar las " + cantidad1 +" "+ ingrediente1 +"en un Bol y batir con los "+ cantidad2 + "gramos de " + ingredinte2 +"; luego debes adicionar los 200 gramos de Leche Condensada y
 batir bien. Una vez termines con esto, adiciona el zumo de los limones y la
 Gelatina sin sabor hidratada en agua tibia. Por último deposita la mezcla en
 moldes individaules y mételo a la nevera. ¡En 30 minutos to postre estará listo!
