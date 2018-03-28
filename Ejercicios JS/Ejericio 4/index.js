@@ -7,11 +7,11 @@ var password;
 var boton;
 
 // Asignacion
-nombre =  document.getElementById('nombre');
-apellido = document.getElementById('apellido');
-email = document.getElementById('email');
-usuario = document. getElementById('usuario');
-password = document.getElementById('password');
+nombre =  document.getElementById('nombre').value;
+apellido = document.getElementById('apellido').value;
+email = document.getElementById('email').value;
+usuario = document. getElementById('usuario').value;
+password = document.getElementById('password').value;
 boton = document.getElementById('btn-guardar');
 
 //Mostar el elemento sellecionado
