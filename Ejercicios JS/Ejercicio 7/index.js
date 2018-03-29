@@ -83,27 +83,22 @@ var Agenda = {
     this.renderSite(site)
   },
   renderSite: function(site){
-    var htmlInfo = '<li class="collection-item avatar">'+
-    '<i class="material-icons circle blue">thumb_up</i>'+
-    '<span class="title> :nombre: </span>"'+
-    '<p> Latitud: :latitud: <br> Longitud :longitud: <br> Descripcion :descripcion:</p>'+
-    '<a href="#!" class="secondary-content"> <i class="material-icons>grade</i></a>"'+
-    '</li>';
-
-    var newSite = htmlInfo
-    var result = newSite.replace(':nombre:',site.nombre)
-                        .replace(':latitud:',site.latitud)
-                        .replace(':longitud:',site.longitud)
-                        .replace(':descripcion:',site.descripcion)
-    var allSites = document.getElementsByClassName('guardados')[0]
-    var markerOpts = {
-      position: {
-        lat: site.latitud,
-        lng: site.longitud
-      },
-      map:map
+    var worker = Worker('doHtml.js')
+    worker.postMessage(site)
+    worker.addEventListener('message', function(e){
+      var result = e.data
+      var allSites = document.getElementsByClassName('guardados')[0]
+      var markerOpts = {
+        position: {
+          lat: site.latitud,
+          lng: site.longitud
+        },
+        map:map
+      }
+      var newMarker = new google.maps.Marker(markerOpts)
+      allSites.innerHTML = allSites.innerHTML + result
     }
-    var newMarker = new google.maps.Marker(markerOpts)
-    allSites.innerHTML = allSites.innerHTML + result
-  }
+    worker.terminate()
+    })
+
 }
