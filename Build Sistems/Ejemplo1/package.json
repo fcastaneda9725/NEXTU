@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/fcastaneda9725/NEXTU#readme",
   "devDependencies": {
+    "grunt": "^1.0.2",
     "gulp": "^3.9.1",
     "gulp-stylus": "^2.7.0"
   }
