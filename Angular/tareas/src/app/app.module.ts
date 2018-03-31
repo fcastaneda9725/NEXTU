@@ -9,12 +9,14 @@ import { MatToolbarModule,
 
 import { AppComponent } from './app.component';
 import { BarraSuperiorComponent } from './barra-superior/barra-superior.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    BarraSuperiorComponent
+    BarraSuperiorComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,
