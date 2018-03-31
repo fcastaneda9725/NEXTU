@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { BarraSuperiorComponent } from './barra-superior/barra-superior.component'
+import { BarraSuperiorComponent } from './barra-superior/barra-superior.component';
 
 @Component({
   selector: 'app-root',
