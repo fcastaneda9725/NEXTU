@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  tituloMostrado = true;
+  listaNombres = ['Paco', 'Juan', 'Luis', 'Chuchito', 'Pedro', 'Montse'];
+
+  buttonClicked() {
+    this.tituloMostrado = !this.tituloMostrado;
+  }
 }

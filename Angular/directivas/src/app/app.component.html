@@ -1,3 +1,13 @@
-<h1>
+<h1 [ngClass]="{fondo: true, borde: true}" [ngStyle]="{color: 'white'}">
   {{title}}
 </h1>
+
+<h2 *ngIf="tituloMostrado">¡Hola soy un titulo!</h2>
+
+<button (click)="buttonClicked()">Botón</button>
+
+<hr>
+
+<ul>
+  <li *ngFor="let nombre of listaNombres">{{nombre}}</li>
+</ul>
