@@ -6,7 +6,6 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatNativeDateModule } from '@angular/material'
-import { MatMomentDateModule } from '@angular/material-moment-adapter'
 
 import { TareasRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,8 +34,7 @@ import { NuevaTareaComponent } from './nueva-tarea/nueva-tarea.component';
     MatDatepickerModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
-    MatNativeDateModule,
-    MatMomentDateModule
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
