@@ -8,4 +8,6 @@ import { InicioComponent } from './inicio/inicio.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  
+  }
 }

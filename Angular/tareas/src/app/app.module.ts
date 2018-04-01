@@ -15,6 +15,7 @@ import { ITareasPendientesComponent } from './i-tareas-pendientes/i-tareas-pendi
 import { ITareasHoyComponent } from './i-tareas-hoy/i-tareas-hoy.component';
 import { ITareasGruposComponent } from './i-tareas-grupos/i-tareas-grupos.component';
 import { NuevaTareaComponent } from './nueva-tarea/nueva-tarea.component';
+import { VerGrupoComponent } from './ver-grupo/ver-grupo.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NuevaTareaComponent } from './nueva-tarea/nueva-tarea.component';
     ITareasPendientesComponent,
     ITareasHoyComponent,
     ITareasGruposComponent,
-    NuevaTareaComponent
+    NuevaTareaComponent,
+    VerGrupoComponent
   ],
   imports: [
     BrowserModule,
