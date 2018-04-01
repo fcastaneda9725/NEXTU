@@ -1,26 +1,10 @@
-<mat-toolbar color="primary">
-  <span>Tareas</span>
-
-  <span class="menu"></span>
-
-  <span>
-    <button mat-icon-button [matMenuTriggerFor]="menu">
-      <mat-icon>more_vert</mat-icon>
-    </button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item>
-        <mat-icon>group</mat-icon>
-        <span>Grupos</span>
-      </button>
-      <button mat-menu-item>
-        <mat-icon>person_outline</mat-icon>
-        <span>Perfil</span>
-      </button>
-      <button mat-menu-item>
-        <mat-icon>power_settings_new</mat-icon>
-        <span>Cerrar Sesión</span>
-      </button>
-    </mat-menu>
-  </span>
-
-</mat-toolbar>
+  <nav class="grey darken-1">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Tareas</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="">Grupos</a></li>
+        <li><a href="">Perfil</a></li>
+        <li><a href="">Cerrar sesión</a></li>
+      </ul>
+    </div>
+  </nav>
