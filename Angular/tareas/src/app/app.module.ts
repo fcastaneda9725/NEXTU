@@ -2,7 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatNativeDateModule } from '@angular/material'
+import { MatMomentDateModule } from '@angular/material-moment-adapter'
 
+import { TareasRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BarraSuperiorComponent } from './barra-superior/barra-superior.component';
 import { InicioComponent } from './inicio/inicio.component';
@@ -24,7 +30,13 @@ import { NuevaTareaComponent } from './nueva-tarea/nueva-tarea.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    TareasRoutingModule,
+    MatDatepickerModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
+    MatMomentDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
