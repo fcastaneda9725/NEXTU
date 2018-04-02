@@ -1,7 +1,7 @@
 {
-  "name": "app-react",
+  "name": "states-props",
   "version": "1.0.0",
-  "description": "Esta es la primera aplicación que creamos usando React Js",
+  "description": "States y Props de React JS",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot"
