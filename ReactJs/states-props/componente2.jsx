@@ -1,13 +1,13 @@
 import React from 'react';
 
-class Componente2 extends React.Component {
+class componente2 extends React.Component {
   render() {
     return (
       <div>
-        <h2>{his.props.mensajeProps}</h2>
+        <h2>{this.props.propiedad}</h2>
       </div>
     )
   }
 }
 
-export default Componente2;
+export default componente2;
