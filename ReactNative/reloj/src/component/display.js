@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
       alignItems: 'center',
     },
   contenedorCiudad: {
-      alignItems: 'flex-start',
+      alignItems: 'flex-end',
     },
   contenedorHoraFecha: {
       alignItems: 'center',
