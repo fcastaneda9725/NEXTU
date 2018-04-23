@@ -5,7 +5,7 @@ import Titulo from './src/component/titulo';
 export default class App extends Component {
   render() {
     return (
-      <Titulo/>
+      <Titulo textoTitulo='Diccionario'/>
     );
   }
 }
