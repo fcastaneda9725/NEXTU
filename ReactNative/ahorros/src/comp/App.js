@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Encabezado from '../lib/encabezado';
-import BarraInferior from '../lib/barraInferior';
+import { Encabezado, BarraInferior } from '../lib';
 import Resumen from './resumen';
 
 export default class App extends Component {

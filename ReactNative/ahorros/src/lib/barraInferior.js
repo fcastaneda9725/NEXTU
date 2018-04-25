@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { TouchableOpacity, StyleSheet, View } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-export default class BarraInferior extends Component {
+export class BarraInferior extends Component {
   render () {
     return (
       <View style={styles.contenedorPrincipal}>

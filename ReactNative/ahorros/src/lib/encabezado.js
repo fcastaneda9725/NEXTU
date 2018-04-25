@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Text, StyleSheet, View } from 'react-native';
 
-export default class Encabezado extends Component {
+export class Encabezado extends Component {
   render () {
     return (
       <View style={styles.viewStyle}>
