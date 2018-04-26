@@ -8,7 +8,7 @@ import LibroList from './src/components/libroList';
 export default class App extends Component {
   render () {
     return (
-       <View style={{ flex: 1, }}>
+       <View style={styles.viewStyle}>
 
           <LibroList />
 
@@ -16,3 +16,10 @@ export default class App extends Component {
      );
   }
 };
+
+const styles = StyleSheet.create({
+  viewStyle: {
+    flex: 1,
+    flexDirection: 'column',
+  },
+});

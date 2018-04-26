@@ -19,6 +19,6 @@ const styles = StyleSheet.create({
     position: 'relative',
     backgroundColor: '#fff',
     justifyContent: 'flex-start',
-    flexDirection: 'row',
+    flexDirection: 'column',
   },
 });
