@@ -1,18 +1,19 @@
 import React, { Component } from 'React';
 import firebase from 'firebase';
 import { Text, StyleSheet } from 'react-native';
-import { Card, CardSection, Boton, Input } from './lib';
+import { Card, CardSection, Boton, Input, Spinner } from './lib';
 
 export default class Formulario extends Component {
   state = {
     email: '',
     password: '',
     error: '',
+    cargando: false,
   };
 
   enviarFormulario() {
     const { email, password } = this.state;
-    this.setState({ error: '' });
+    this.setState({ error: '', cargando: true });
     firebase.auth().signInWithEmailAndPassword(email, password)
         .then(this.loginExitoso.bind(this))
         .catch(this.loginError.bind(this))
@@ -20,11 +21,24 @@ export default class Formulario extends Component {
   }
 
   loginExitoso() {
-    this.setState({ email: '', password: '' });
+    this.setState({ email: '', password: '', cargando: false });
   }
 
   loginError() {
-    this.setState({ error: 'Error de Autentificación' });
+    this.setState({ error: 'Error de Autentificación', cargando: false });
+  }
+
+  mostrarAccion() {
+    if (this.state.cargando) {
+      return <Spinner size= { 'small' } />;
+    }
+
+    return (
+      <Boton
+        texto={ 'Iniciar Sesión' }
+        onPress= { this.enviarFormulario.bind(this) }
+      />
+    );
   }
 
   render() {
@@ -50,10 +64,7 @@ export default class Formulario extends Component {
         </CardSection>
         <Text style= { styles.errorStyles }>{ this.state.error } </Text>
         <CardSection>
-          <Boton
-            texto={ 'Iniciar Sesión' }
-            onPress= { this.enviarFormulario.bind(this) }
-          />
+          { this.mostrarAccion() }
         </CardSection>
 
       </Card>
