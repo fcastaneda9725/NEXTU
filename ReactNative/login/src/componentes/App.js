@@ -8,7 +8,7 @@ export default class App extends Component {
       <View>
         <Encabezado tituloEncabezado={ 'Login App' } />
         <Text> Soy un componente feo </Text>
-        <Boton texto={ 'prueba' } />
+        <Boton texto={ 'Prueba' }/>
       </View>
     );
   }
