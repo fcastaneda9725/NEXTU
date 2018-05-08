@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import firebase from 'firebase';
 import { View, Text } from 'react-native';
 import { Encabezado, Boton } from './lib';
+import Formulario from './formulario';
 
 export default class App extends Component {
   componentWillMount() {
@@ -19,8 +20,7 @@ export default class App extends Component {
     return (
       <View>
         <Encabezado tituloEncabezado={ 'Login App' } />
-        <Text> Soy un componente feo </Text>
-        <Boton texto={ 'Prueba' }/>
+        <Formulario />
       </View>
     );
   }
