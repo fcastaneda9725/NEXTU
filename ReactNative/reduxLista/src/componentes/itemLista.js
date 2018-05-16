@@ -1,21 +1,42 @@
 import React, { Component } from 'react';
-import { Text, StyleSheet, TouchableWithoutFeedback, View } from 'react-native';
+import { Text,
+         StyleSheet,
+         TouchableWithoutFeedback,
+         View,
+         LayoutAnimation,
+         UIManager,
+         Platform,
+       } from 'react-native';
 import { CardSection } from './lib';
 import * as actions from '../actions';
 import { connect } from 'react-redux';
 
 class ItemLista extends Component {
 
+  componentWillUpdate () {
+    LayoutAnimation.spring();
+    if (Platform.OS === 'android') {
+      UIManager.setLayoutAnimationEnabledExperimental
+      && UIManager.setLayoutAnimationEnabledExperimental(true);
+      LayoutAnimation.spring();
+    }
+  }
+
   mostrarDescripcion () {
     const { expandir, frutaInfo } = this.props;
     if (expandir) {
       return (
-        <Text>{ frutaInfo.descripcion } </Text>
+        <CardSection>
+          <Text style={{ flex: 1 }}>
+            { frutaInfo.descripcion }
+          </Text>
+        </CardSection>
       );
     }
   }
 
   render() {
+
     const { id, nombre } = this.props.frutaInfo;
     return (
       <TouchableWithoutFeedback
