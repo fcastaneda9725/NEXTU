@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Perfil from './src/component/Perfil';
+import Router from './Router';
 
 class App extends Component {
   render() {
     return (
-            <Perfil />
+            <Router />
         );
   }
 }
